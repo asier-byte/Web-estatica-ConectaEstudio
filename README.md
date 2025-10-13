@@ -28,8 +28,5 @@ La paleta de colores principal utilizada en esta web se compone de:
 ## Tipografía
 
 ![Muestra de la tipografía Nombre de la Fuente](assets/img/fuentes(google-fonts))
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 2c6a030d5a3403f540b2da1b6ccc0add52b8eef7
