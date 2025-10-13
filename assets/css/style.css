@@ -1,0 +1,62 @@
+/*ESTILOS*/
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F1F5F9; /* Gris claro */
+    color: #0F172A; /* Azul oscuro */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1E3A8A; /* Azul principal */
+}
+
+.badge, .btn {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: #1E3A8A !important; /* Azul principal */
+}
+
+.navbar .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar .nav-link:hover {
+    color: #93C5FD; /* Azul claro al pasar el mouse */
+}
+
+/* FOOTER */
+footer {
+    background-color: #1E3A8A;
+    color: #FFFFFF;
+}
+
+/* CARDS */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card-header {
+    background-color: #3B82F6; /* Azul secundario */
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-footer {
+    background-color: #93C5FD; /* Azul claro */
+    color: #0F172A;
+}
+
+/* LINKS */
+a {
+    color: #1E3A8A;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #3B82F6;
+}
+

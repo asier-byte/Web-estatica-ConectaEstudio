@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Enlace a CSS de Bootstrap (CDN v5.3) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet"> 
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/conectaestudio.jpg" type="image/png">
+
+    <title>Tutores de Humanidades</title>
+</head>
+<body class="fondo-humanidades">
+
+    <!-- 1. BARRA DE NAVEGACIÓN  -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">ConectaEstudio 📚</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Quiero ser Tutor</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL Y LISTA DE TUTORES -->
+    <main class="py-5">
+        <div class="container">
+            <!-- El título refleja el filtro activo (Humanidades) -->
+            <h1 class="mb-5 text-center text-primary fw-bold">Tutores de Humanidades</h1>
+
+            <!-- Título de la lista de tutores -->
+            <h2 class="mb-4">Resultados (1 Tutor)</h2>
+
+            <!-- 3. LISTA DE TUTORES -->
+            <div class="row row-cols-1 g-4">
+
+                <!-- TARJETA DEL TUTOR 1: Sofía Ramos -->
+                <div class="col">
+                    <div class="card shadow-lg border-0">
+                        <div class="row g-0">
+                            <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                                <img src="img/tutorahumanidades.png" class="img-fluid rounded-circle w-75" alt="Avatar de Sofía Ramos">
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary fw-bold">Sofía Ramos (2º Bachillerato)</h5>
+                                    <p class="card-text mb-1">
+                                        <span class="badge bg-success me-2">Bachillerato (Preparación EBAU/EVAU)</span>
+                                        <span class="badge bg-secondary">Historia del Mundo Contemporáneo y Arte</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Especialista en análisis de documentos históricos y comentario de obras de arte. Te enseño a estructurar ensayos perfectos para selectividad.
+                                    </p>
+                                    <p class="card-text mb-1">
+                                        <small class="text-muted">Correo: sofi.ram0s@gmail.com</small>
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Disponibilidad: Lunes y Jueves tardes ★★★★★</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-1">© 2025 ConectaEstudio 📚</p>
+        <p class="mb-0">Aprende, comparte y triunfa.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Enlace a CSS de Bootstrap (CDN v5.3) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="./style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="./img/conectaestudio.jpg" type="image/png">
+    <title>Tutores de Matemáticas</title>
+</head>
+<body class="fondo-math">
+
+    <!-- 1. BARRA DE NAVEGACIÓN -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">ConectaEstudio 📚</a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./menu.html">Menú</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Quiero ser Tutor</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 2. CONTENIDO PRINCIPAL Y LISTA DE TUTORES -->
+    <main class="py-5">
+        <div class="container">
+            <!-- El título refleja el filtro activo (Matemáticas) -->
+            <h1 class="mb-5 text-center text-primary fw-bold">Tutores de Matemáticas</h1>
+
+            <!-- Título de la lista de tutores -->
+            <h2 class="mb-4">Resultados (3 Tutores)</h2>
+
+            <!-- 3. LISTA DE TUTORES -->
+            <div class="row row-cols-1 g-4">
+
+                <!-- TARJETA DEL TUTOR 1: JAVIER (Matemáticas) -->
+                <div class="col">
+                    <div class="card shadow-lg border-0">
+                        <div class="row g-0">
+                            <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                                <img src="./img/f6.jpg" class="img-fluid rounded-circle w-75" alt="Avatar de Javier">
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <div class="card-body">
+                                    <h5 class="card-title text-primary fw-bold">Javier López (3º ESO 4ºESO)</h5>
+                                    <p class="card-text mb-1">
+                                        <span class="badge bg-success me-2">Matemáticas</span>
+                                        <span class="badge bg-secondary">3º y 4º ESO</span>
+                                    </p>
+                                    <p class="card-text mb-1">
+                                        <small class="text-muted">Correo: javier.lopez@gmail.com</small>
+                                    </p>
+                                    <p class="card-text">
+                                        Especialista en resolver problemas complejos paso a paso. ¡Hagamos que el álgebra sea simple!
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Disponibilidad: Lunes y Miércoles tardes. ★★★★★</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA DEL TUTOR 2: LAURA (Cálculo y Análisis) -->
+                <div class="col">
+                    <div class="card shadow-lg border-0">
+                        <div class="row g-0">
+                            <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                                <img src="./img/f4.jpg" class="img-fluid rounded-circle w-75" alt="Avatar de Laura">
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <div class="card-body">
+                                    <h5 class="card-title text-info fw-bold">Laura García (1º y 2º Bachillerato)</h5>
+                                    <p class="card-text mb-1">
+                                        <span class="badge bg-danger me-2">(Cálculo y Análisis)</span>
+                                        <span class="badge bg-secondary">1º y 2º Bachillerato</span>
+                                    </p>
+                                    <p class="card-text mb-1">
+                                        <small class="text-muted">Correo: laura.garcia@gmail.com</small>
+                                    </p>
+                                    <p class="card-text">
+                                        Experta en Derivadas, Integrales y Límites. Prepara la Selectividad (EBAU/EVAU) con confianza.
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Disponibilidad: Martes y Jueves mañanas. ★★★★☆</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA DEL TUTOR 3: PABLO (Fundamentos y Aritmética) -->
+                <div class="col">
+                    <div class="card shadow-lg border-0">
+                        <div class="row g-0">
+                            <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                                <img src="./img/f2.png" class="img-fluid rounded-circle w-75" alt="Avatar de Pablo">
+                            </div>
+                            <div class="col-8 col-sm-9">
+                                <div class="card-body">
+                                    <h5 class="card-title text-success fw-bold">Pablo Torres (1º ESO - 2º ESO)</h5>
+                                    <p class="card-text mb-1">
+                                        <span class="badge bg-warning me-2">(Fundamentos y Aritmética)</span>
+                                        <span class="badge bg-secondary">1º y 2º ESO</span>
+                                    </p>
+                                    <p class="card-text mb-1">
+                                        <small class="text-muted">Correo: pablo.torres@gmail.com</small>
+                                    </p>
+                                    <p class="card-text">
+                                        Especializado en fundamentos, fracciones y decimales. ¡Construyamos una base matemática sólida!
+                                    </p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Disponibilidad: Viernes tardes y Sábados mañanas. ★★★★★</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="bg-primary text-white text-center py-3">
+        <p class="mb-1">© 2025 ConectaEstudio 📚</p>
+        <p class="mb-0">Aprende, comparte y triunfa.</p>
+    </footer>
+</body>
+</html>
