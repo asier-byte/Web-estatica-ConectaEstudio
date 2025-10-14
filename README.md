@@ -22,11 +22,9 @@ La paleta de colores principal utilizada en esta web se compone de:
 #93C5FD; /* Azul claro */
 
 ## Paleta de Colores
-
-![Visualización de la Paleta de Colores utilizada en el proyecto](assets/img/paleta-colores)
+<img width="847" height="386" alt="paleta-colores" src="https://github.com/user-attachments/assets/016c2fd8-c10d-4ecb-ab09-6061ed21eafd" />
 
 ## Tipografía
 
-![Muestra de la tipografía Nombre de la Fuente](assets/img/fuentes(google-fonts))
-
+<img width="497" height="351" alt="fuentes" src="https://github.com/user-attachments/assets/83d64ceb-93ee-48dd-ab95-af2b18591d3c" />
 
