@@ -1,115 +1,546 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ConectaEstudio 📚</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  
-
-    <!-- Favicon -->
-<link rel="icon" href="./img/conectaestudio.jpg" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./assets/css/style.css">
-
-</body>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <!-- Favicon -->
+  <link rel="icon" href="./img/conectaestudio.jpg" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
-  <div class="container-fluid p-0 flex-grow-1 d-flex flex-column">
 
-    <!-- NAVBAR -->
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">ConectaEstudio 📚</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="./index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./menu.html">Menú</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Quiero ser Tutor</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- MAIN LAYOUT -->
-    <div class="container-fluid flex-grow-1">
-      <div class="row min-vh-100">
-        
-        <!-- SIDEBAR -->
-        <aside class="col-12 col-md-3 col-lg-2 bg-primary text-white p-3">
-          <ul>
+  <!-- NAVBAR (común) -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" data-section="inicio">ConectaEstudio 📚</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="#" data-section="inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-section="menu">Menú</a></li>
+           
+            <li class="nav-item"><a class="nav-link" href="#" data-section="contacto">Quiero ser Tutor</a></li>
           </ul>
-        </aside>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <!-- CONTENT -->
-        <main class="col-12 col-md-9 col-lg-10 p-4">
-          <!-- Imagen central -->
-          <div class="row mb-4">
-            <div class="col-12 text-center">
-              <img src="./img/pexels-pixabay-301920.jpg" width="600" height="400"
-                class="img-fluid rounded shadow">
-            </div>
-          </div>
+  <!-- MAIN SPA CONTAINER -->
+  <main class="flex-grow-1">
 
-          <!-- Cards -->
-          <div class="row g-4 mb-4">
-            <div class="col-lg-4 col-md-6">
-              <div class="card h-100">
-                <div class="card-header">Featured</div>
-                <div class="card-body">
-                  <h5 class="card-title">1. Elige</h5>
-                  <p class="card-text">Busca un tutor por asignatura y nivel. ¡Fácil y rápido!</p>
-                </div>
-                <div class="card-footer text-muted">2 days ago</div>
-              </div>
-            </div>
+    <!-- === INICIO (contenido exacto de index.html) === -->
+    <section id="inicio" class="spa-section spa-active">
+  <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
 
-            <div class="col-lg-4 col-md-6">
-              <div class="card h-100">
-                <div class="card-header">Featured</div>
-                <div class="card-body">
-                  <h5 class="card-title">2. Conecta</h5>
-                  <p class="card-text">Pide la tutoría y acuerda un horario en la biblioteca escolar.</p>
-                </div>
-                <div class="card-footer text-muted">2 days ago</div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="card h-100">
-                <div class="card-header">Featured</div>
-                <div class="card-body">
-                  <h5 class="card-title">3. Triunfa</h5>
-                  <p class="card-text">Refuerza tu conocimiento y alcanza tus objetivos académicos.</p>
-                </div>
-                <div class="card-footer text-muted">2 days ago</div>
-              </div>
-            </div>
-          </div>
-        </main>
+    <!-- Imagen central -->
+    <div class="row mb-4 justify-content-center w-100">
+      <div class="col-auto text-center">
+        <img src="./img/pexels-pixabay-301920.jpg" width="600" height="400"
+          class="img-fluid rounded shadow">
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="bg-primary text-white text-center py-3">
-      <p class="mb-1">© 2025 ConectaEstudio 📚</p>
-      <p class="mb-0">Aprende, comparte y triunfa.</p>
-    </footer>
+    <!-- Tarjeta de Presentación -->
+    <div class="row mb-4 justify-content-center w-100">
+      <div class="col-12 col-md-10 col-lg-8">
+        <div class="card shadow-lg border-primary text-center">
+          <div class="card-body">
+            <h3 class="card-title text-primary fw-bold">Bienvenido a ConectaEstudio 📚</h3>
+            <p class="card-text">
+              ConectaEstudio nace para ayudar a estudiantes a encontrar tutores de manera rápida y confiable.
+              Nuestro objetivo es reforzar conocimientos, guiar en el aprendizaje y crear una comunidad educativa
+              donde aprender sea fácil, entretenido y efectivo.
+            </p>
+            <p class="card-text">
+              Ofrecemos tutores especializados por asignatura y nivel, con disponibilidad flexible y métodos adaptados a cada estudiante.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards informativas -->
+    <div class="row g-4 justify-content-center w-100">
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 text-center">
+          <div class="card-header">Info: <span class="toggle-icon">▼</span></div>
+          <div class="card-body">
+            <h5 class="card-title">1. Elige</h5>
+            <p class="card-text">Busca un tutor por asignatura y nivel. ¡Fácil y rápido!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 text-center">
+          <div class="card-header">Info: <span class="toggle-icon">▼</span></div>
+          <div class="card-body">
+            <h5 class="card-title">2. Conecta</h5>
+            <p class="card-text">Pide la tutoría y acuerda un horario en la biblioteca escolar.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="card h-100 text-center">
+          <div class="card-header">Info: <span class="toggle-icon">▼</span></div>
+          <div class="card-body">
+            <h5 class="card-title">3. Triunfa</h5>
+            <p class="card-text">Refuerza tu conocimiento y alcanza tus objetivos académicos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </div>
+</section>
+
+
+      </div>
+    </section>
+
+    <!-- === MENU (contenido exacto de menu.html) === -->
+     <div class="container py-5">
+
+    <section id="menu" class="spa-section" style="display:none;">
+        <!-- Buscador por asignatura (desplegable) -->
+<div class="mb-5 text-center">
+    <h1 class="mb-5 text-center text-primary fw-bold">Encuentra a tu Tutor Ideal 🔎</h1> 
+  <label for="asignaturaSelect" class="form-label fw-bold">Selecciona una asignatura:</label>
+  <select id="asignaturaSelect" class="form-select w-50 mx-auto">
+    <option value="" selected>-- Elige una asignatura --</option>
+    <option value="math">Matemáticas</option>
+    <option value="ingles">Inglés</option>
+    <option value="fyq">Física y Química</option>
+    <option value="humanidades">Humanidades</option>
+  </select>
+</div>
+
+       
+    </section>
+
+    <!-- === MATH === -->
+    <section id="math" class="spa-section" style="display:none;">
+      <div class="container py-5">
+        <h1 class="mb-5 text-center text-primary fw-bold">Tutores de Matemáticas</h1>
+
+        <h2 class="mb-4">Resultados (3 Tutores)</h2>
+
+        <div class="row row-cols-1 g-4">
+
+          <!-- TARJETA DEL TUTOR 1: JAVIER (Matemáticas) -->
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/f6.jpg" class="img-fluid rounded-circle w-75" alt="Avatar de Javier">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">Javier López (3º ESO 4ºESO)</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-success me-2">Matemáticas</span>
+                      <span class="badge bg-secondary">3º y 4º ESO</span>
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: javier.lopez@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      Especialista en resolver problemas complejos paso a paso. ¡Hagamos que el álgebra sea simple!
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Lunes y Miércoles tardes. ★★★★★</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA DEL TUTOR 2: LAURA (Cálculo y Análisis) -->
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/f4.jpg" class="img-fluid rounded-circle w-75" alt="Avatar de Laura">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-info fw-bold">Laura García (1º y 2º Bachillerato)</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-danger me-2">(Cálculo y Análisis)</span>
+                      <span class="badge bg-secondary">1º y 2º Bachillerato</span>
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: laura.garcia@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      Experta en Derivadas, Integrales y Límites. Prepara la Selectividad (EBAU/EVAU) con confianza.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Martes y Jueves mañanas. ★★★★☆</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- TARJETA DEL TUTOR 3: PABLO (Fundamentos y Aritmética) -->
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/f2.png" class="img-fluid rounded-circle w-75" alt="Avatar de Pablo">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-success fw-bold">Pablo Torres (1º ESO - 2º ESO)</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-warning me-2">(Fundamentos y Aritmética)</span>
+                      <span class="badge bg-secondary">1º y 2º ESO</span>
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: pablo.torres@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      Especializado en fundamentos, fracciones y decimales. ¡Construyamos una base matemática sólida!
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Viernes tardes y Sábados mañanas. ★★★★★</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === INGLES === -->
+    <section id="ingles" class="spa-section" style="display:none;">
+      <div class="container py-5">
+        <h1 class="mb-5 text-center text-primary fw-bold">Tutores de Inglés</h1>
+        <h2 class="mb-4">Resultados (2 Tutores)</h2>
+        <div class="row row-cols-1 g-4">
+
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/f5.jpg" class="img-fluid rounded-circle w-75" alt="Avatar de Javier">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">Ana Romero (Gramática y Certificaciones)</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-success me-2">Gramática y B2/C1 Cambridge</span>
+                      <span class="badge bg-secondary">Bachillerato y Adultos</span>
+                    </p>
+                    <p class="card-text">
+                      Experta en Gramática avanzada y preparación de exámenes oficiales (B2 First y C1 Advanced). ¡Consigue tu certificación!
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: ana.romer0@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Lunes y Miércoles noches ★★★★★</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/f8.jpg" class="img-fluid rounded-circle w-75" alt="Avatar de Javier">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">David Ortiz</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-success me-2">Inglés Conversacional y Pronunciación</span>
+                      <span class="badge bg-secondary">3º y 4º ESO / Nivel B1</span>
+                    </p>
+                    <p class="card-text">
+                      Enfoque práctico para mejorar la fluidez y perder el miedo a hablar. Tutorías dinámicas basadas en conversación.
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: david.ort1z@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Martes y Jueves tardes ★★★★★</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === FYQ === -->
+    <section id="fyq" class="spa-section" style="display:none;">
+      <div class="container py-5">
+        <h1 class="mb-5 text-center text-primary fw-bold">Tutores de FyQ</h1>
+        <h2 class="mb-4">Resultados (3 Tutores)</h2>
+        <div class="row row-cols-1 g-4">
+
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/tutorfyq2.png" class="img-fluid rounded-circle w-75" alt="Avatar de Javier">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">Carlos Ruiz (Física: Cinemática y Dinámica)</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-success me-2">Física, Mecánica y Vectores</span>
+                      <span class="badge bg-secondary">2º Bachillerato</span>
+                    </p>
+                    <p class="card-text">
+                      Experto en Cinemática, Dinámica y Energía. Te ayudo a visualizar los problemas y entender los conceptos clave con rigor matemático.
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: carl0s.ru1z@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Lunes y Jueves tardes ★★★★★</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/tutorafyq.png" class="img-fluid rounded-circle w-75" alt="Avatar de Javier">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">Elena Vidal (2º Bachillerato)</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-success me-2">Química, Reacciones y Formulación</span>
+                      <span class="badge bg-secondary">3º y 4º ESO</span>
+                    </p>
+                    <p class="card-text">
+                      Especialista en Formulación Inorgánica, Orgánica y Estequiometría. Haremos que los moles y las reacciones sean sencillos.
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: elena.v1d4ls@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Martes y Miércoles mañanas ★★★★★</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/tutorfyq.png" class="img-fluid rounded-circle w-75" alt="Avatar de Javier">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">Marcos Polo (Física y Química: Nivel Básico)</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-success me-2">Matemáticas (Álgebra)</span>
+                      <span class="badge bg-secondary">3º y 4º ESO</span>
+                    </p>
+                    <p class="card-text">
+                      Refuerzo en los conceptos básicos de la tabla periódica, magnitudes físicas y unidades. Ideal para construir una base sólida.
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: marcos.p0l0@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Viernes noches y Sábados tardes ★★★★★</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === HUMANIDADES === -->
+    <section id="humanidades" class="spa-section" style="display:none;">
+      <div class="container py-5">
+        <h1 class="mb-5 text-center text-primary fw-bold">Tutores de Humanidades</h1>
+        <h2 class="mb-4">Resultados (1 Tutor)</h2>
+        <div class="row row-cols-1 g-4">
+          <div class="col">
+            <div class="card shadow-lg border-0">
+              <div class="row g-0">
+                <div class="col-4 col-sm-3 d-flex align-items-center justify-content-center p-3 p-sm-4 bg-light">
+                  <img src="./img/tutorahumanidades.png" class="img-fluid rounded-circle w-75" alt="Avatar de Sofía Ramos">
+                </div>
+                <div class="col-8 col-sm-9">
+                  <div class="card-body">
+                    <h5 class="card-title text-primary fw-bold">Sofía Ramos (2º Bachillerato)</h5>
+                    <p class="card-text mb-1">
+                      <span class="badge bg-success me-2">Bachillerato (Preparación EBAU/EVAU)</span>
+                      <span class="badge bg-secondary">Historia del Mundo Contemporáneo y Arte</span>
+                    </p>
+                    <p class="card-text">
+                      Especialista en análisis de documentos históricos y comentario de obras de arte. Te enseño a estructurar ensayos perfectos para selectividad.
+                    </p>
+                    <p class="card-text mb-1">
+                      <small class="text-muted">Correo: sofi.ram0s@gmail.com</small>
+                    </p>
+                    <p class="card-text">
+                      <small class="text-muted">Disponibilidad: Lunes y Jueves tardes ★★★★★</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>                  
+        </div>
+      </div>
+    </section>
+
+    <!-- === CONTACTO === -->
+    <section id="contacto" class="spa-section" style="display:none;">
+      <div class="container py-5">
+        <h1 class="mb-5 text-center text-primary fw-bold">Únete a la Comunidad de Tutores ✨</h1>
+        
+        <!-- Proceso de Postulación como cards -->
+        <h2 class="mb-3 text-secondary">Proceso de Postulación</h2>
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">1. ¿Qué se necesita para ser tutor?</h5>
+                <p class="card-text"><strong>Compromiso y conocimiento sólido.</strong> Requerimos que tengas al menos un nivel de conocimiento de <strong>2º de Bachillerato</strong> en la materia que deseas impartir. Es fundamental la seriedad y puntualidad con nuestros alumnos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">2. Proceso de Verificación</h5>
+                <p class="card-text"><strong>Una vez enviado el formulario,</strong> nuestro equipo revisará tus datos y te contactará en las próximas 48 horas para una breve entrevista de validación. ¡Queremos asegurar la máxima calidad!</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">3. ¿Cómo promocionaré mis clases?</h5>
+                <p class="card-text">Tu perfil se incluirá en la página principal de <strong>Buscar Tutores</strong> destacando tu materia, nivel y disponibilidad. Los alumnos te contactarán directamente a través de nuestro sistema interno.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <hr class="my-5">
+
+        <!-- Formulario de Datos del Tutor -->
+        <h2 class="mb-4 text-secondary">Datos del Tutor</h2>
+        <div class="p-4 border rounded shadow-sm">
+          <form id="form-tutor">
+            <div class="row mb-3">
+              <label for="inputName" class="col-sm-3 col-form-label fw-bold">Nombre Completo</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" id="inputName" required>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-3 col-form-label fw-bold">Email</label>
+              <div class="col-sm-9">
+                <input type="email" class="form-control" id="inputEmail3" required>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-3 col-form-label fw-bold">Contraseña</label>
+              <div class="col-sm-9">
+                <input type="password" class="form-control" id="inputPassword3" required>
+              </div>
+            </div>
+            
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-sm-3 pt-0 fw-bold">Nivel Actual</legend>
+              <div class="col-sm-9">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="levelRadios" id="levelRadios1" value="bachillerato" checked>
+                  <label class="form-check-label" for="levelRadios1">Bachillerato</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="levelRadios" id="levelRadios2" value="universidad">
+                  <label class="form-check-label" for="levelRadios2">Universidad</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="levelRadios" id="levelRadios3" value="otro">
+                  <label class="form-check-label" for="levelRadios3">Otro/Profesional</label>
+                </div>
+              </div>
+            </fieldset>
+            
+            <div class="row mb-3">
+              <label for="inputSubjects" class="col-sm-3 col-form-label fw-bold">Materias a Impartir</label>
+              <div class="col-sm-9">
+                <select id="inputSubjects" class="form-select" multiple aria-label="Materias a Impartir" required>
+                  <option value="matematicas">Matemáticas</option>
+                  <option value="fisica">Física y Química</option>
+                  <option value="ingles">Inglés</option>
+                  <option value="literatura">Humanidades</option>
+                </select>
+                <small class="text-muted">Mantén pulsado Ctrl/Cmd para seleccionar varias.</small>
+              </div>
+            </div>
+            
+            <div class="row mb-3">
+              <label for="inputExperience" class="col-sm-3 col-form-label fw-bold">Experiencia</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" id="inputExperience" rows="4" placeholder="Describe brevemente tu experiencia como tutor o en la materia." required></textarea>
+              </div>
+            </div>
+            
+            <div class="row">
+              <div class="col-sm-9 offset-sm-3">
+                <button type="submit" class="btn btn-success btn-lg">Enviar Postulación</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER (global) -->
+  <footer class="bg-primary text-white text-center py-3 mt-auto">
+    <p class="mb-1">© 2025 ConectaEstudio 📚</p>
+    <p class="mb-0">Aprende, comparte y triunfa.</p>
+  </footer>
+
 </body>
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="./assets/js/app.js"></script>
 </html>
