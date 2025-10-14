@@ -23,10 +23,6 @@ La paleta de colores principal utilizada en esta web se compone de:
 
 ## Paleta de Colores
 
-![Visualización de la Paleta de Colores utilizada en el proyecto](assets/img/paleta-colores)
-
-## Tipografía
-
-![Muestra de la tipografía Nombre de la Fuente](assets/img/fuentes(google-fonts))
+asasas
 
 
