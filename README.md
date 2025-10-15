@@ -25,4 +25,5 @@ La paleta de colores principal utilizada en esta web se compone de:
 
 asasas
 
+https://learn.jquery.com/events/event-basics/
 
