@@ -40,6 +40,10 @@ La página está organizada de manera modular, con secciones principales como:
 
 Cada sección cuenta con su propio estilo CSS y funciones jQuery para mejorar la interacción (por ejemplo, mostrar/ocultar secciones, animaciones suaves, validación de formularios).
 
+## Estructura del proyecto
+
+<img width="368" height="208" alt="image" src="https://github.com/user-attachments/assets/15b7f9ee-37f5-4973-877a-9d50d59fab1d" />
+
 ---
 
 ## Guía de Estilos
