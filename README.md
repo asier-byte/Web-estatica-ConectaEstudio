@@ -70,6 +70,6 @@ Se ha utilizado una tipografía clara y legible, compatible con todos los navega
 
 ## Recursos Adicionales
 
-- Documentación de jQuery utilizada: [https://learn.jquery.com/events/event-basics/](https://learn.jquery.com/events/event-basics/)
+- Documentación de jQuery utilizada: [[https://learn.jquery.com/events/event-basics/](https://learn.jquery.com/events/event-basics/)]
 - La referencia oficial de jQuery, con explicación de métodos, selectores y eventos: [https://api.jquery.com/]
 - Tutorial interactivo, puedes probar el código directamente en la página: [https://www.w3schools.com/jquery/]
