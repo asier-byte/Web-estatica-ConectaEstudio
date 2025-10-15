@@ -58,11 +58,12 @@ La paleta de colores principal utilizada en esta web se compone de:
 | Azul claro | #93C5FD | Resaltados y hover |
 
 *Representación visual de la paleta:*  
-![Paleta de colores](ruta/a/imagen_de_colores.png) <!-- reemplaza con la imagen real de los colores -->
+<img width="847" height="386" alt="paleta-colores" src="https://github.com/user-attachments/assets/2ee6561d-b367-441e-912e-3535cac883c1" />
 
 ### Tipografía
 
 Se ha utilizado una tipografía clara y legible, compatible con todos los navegadores modernos, priorizando una experiencia de lectura cómoda para estudiantes.
+<img width="497" height="351" alt="fuentes" src="https://github.com/user-attachments/assets/44ce8278-7c07-41b4-ad2b-338f386a4f65" />
 
 ---
 
