@@ -63,6 +63,7 @@ La paleta de colores principal utilizada en esta web se compone de:
 ### Tipografía
 
 Se ha utilizado una tipografía clara y legible, compatible con todos los navegadores modernos, priorizando una experiencia de lectura cómoda para estudiantes.
+
 <img width="497" height="351" alt="fuentes" src="https://github.com/user-attachments/assets/44ce8278-7c07-41b4-ad2b-338f386a4f65" />
 
 ---
