@@ -32,8 +32,6 @@ $(function() {
   showSection('inicio');
 });
 
-
-
 // Código para las cards en la sección #inicio
 $(document).ready(function() {
   // Ocultamos los textos solo de las cards dentro de #inicio
@@ -49,15 +47,9 @@ $(document).ready(function() {
   });
 });
 
-
-
-
-
-
-
-
 // FILTRO DE ASIGNATURAS EN MENÚ
-$('.filtro-btn').click(function() {
+$(document).ready(function() {
+  $('.filtro-btn').click(function() {
     let asignatura = $(this).data('section');
 
     // Oculta todas las sub-secciones de asignaturas
@@ -65,10 +57,12 @@ $('.filtro-btn').click(function() {
 
     // Muestra solo la asignatura seleccionada
     $('#' + asignatura).show();
+  });
 });
 
 // NAVEGACIÓN DEL MENÚ PRINCIPAL
-$('.nav-link').click(function(e) {
+$(document).ready(function() {
+  $('.nav-link').click(function(e) {
     e.preventDefault();
     let section = $(this).data('section');
 
@@ -77,22 +71,75 @@ $('.nav-link').click(function(e) {
 
     // Muestra la sección seleccionada
     $('#' + section).show();
+  });
 });
 
-
-
-
+// FILTRO DE ASIGNATURAS POR SELECT
 $(document).ready(function() {
   $('#asignaturaSelect').on('change', function() {
     var selected = $(this).val();
-    
+
     // Ocultar todas las secciones de tutores
     $('#math, #ingles, #fyq, #humanidades').hide();
-    
+
     // Mostrar la sección seleccionada
-    if(selected) {
+    if (selected) {
       $('#' + selected).show();
     }
   });
 });
 
+// Interactividad solo para las cards del Proceso de Postulación
+$(document).ready(function() {
+  // Ocultar inicialmente todos los contenidos de las cards
+  $("#postulacion-cards .card-body").hide();
+
+  // Al hacer clic en el encabezado de una card
+  $("#postulacion-cards .card-header").on("click", function() {
+    // Cerrar todas las demás card-body
+    $("#postulacion-cards .card-body").slideUp();
+    $("#postulacion-cards .toggle-icon").text("▼");
+
+    // Si la card clicada estaba cerrada, abrirla
+    const body = $(this).next(".card-body");
+    if (!body.is(":visible")) {
+      body.slideDown();
+      $(this).find(".toggle-icon").text("▲");
+    }
+  });
+});
+
+// Validación del formulario de contacto
+$(document).ready(function() {
+  $("#form-tutor").on("submit", function(e) {
+    e.preventDefault(); // evitar envío real del formulario
+
+    const email = $("#inputEmail3").val().trim();
+    const name = $("#inputName").val().trim();
+    const password = $("#inputPassword3").val().trim();
+    const experience = $("#inputExperience").val().trim();
+
+    // Expresión regular básica para validar email
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Validación básica
+    if (name === "" || password === "" || experience === "") {
+      alert("Por favor, completa todos los campos requeridos.");
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      alert("Por favor, introduce un correo electrónico válido.");
+      return;
+    }
+
+    // Si todo está correcto, mostrar modal
+    const modal = new bootstrap.Modal(document.getElementById("thankYouModal"));
+    modal.show();
+
+    // Limpiar el formulario tras unos segundos
+    setTimeout(() => {
+      $("#form-tutor")[0].reset();
+    }, 1000);
+  });
+});
