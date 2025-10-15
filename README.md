@@ -21,10 +21,10 @@ El objetivo principal es conectar a estudiantes que buscan ayuda con tutores vol
 La página se ha desarrollado utilizando:
 
 - **HTML5**: para la estructura del contenido.
-- **CSS3**: para el estilo y la presentación visual.
+- **CSS**: para el estilo y la presentación visual.
 - **jQuery**: para añadir funcionalidades interactivas y manejar eventos, adaptando la web a una **Single Page Application (SPA)** con navegación dinámica sin recargar la página.
 
-El entorno de desarrollo consiste en un editor de código local (VS Code recomendado) y visualización mediante navegador web moderno. La documentación de los comandos y eventos de jQuery utilizados se ha consultado en: [jQuery Event Basics](https://learn.jquery.com/events/event-basics/).
+El entorno de desarrollo consiste en un editor de código local (VS Code ) y visualización mediante navegador web moderno. La documentación de los comandos y eventos de jQuery utilizados se ha consultado en: [jQuery Event Basics](https://learn.jquery.com/events/event-basics/).
 
 ---
 
